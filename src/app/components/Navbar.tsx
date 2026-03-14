@@ -22,7 +22,7 @@ export function Navbar() {
             <Smartphone className="w-5 h-5 text-primary-foreground" />
           </div>
           <span className="text-foreground tracking-tight" style={{ fontWeight: 600, fontSize: "1.125rem" }}>
-            DevPortfolio
+            Mohamed Fouad
           </span>
         </Link>
 

@@ -1,3 +1,9 @@
+import saraseafood1 from "../../assets/imgaes/saraseafood/7.jpeg";
+import zabehaty1 from "../../assets/imgaes/Zabehaty/1.webp";
+import mobigift1 from "../../assets/imgaes/Mobigift/5.webp";
+import leomarka1 from "../../assets/imgaes/LEOMARKA/1.webp";
+import mobishop1 from "../../assets/imgaes/MobiShop/1.webp";
+
 export const skills = [
   {
     category: "Mobile Development",
@@ -36,9 +42,9 @@ export const skills = [
     ],
   },
 ];
-
-export const projects = [
-  {
+/**
+ * 
+ * {
     id: "finpay",
     title: "FinPay",
     subtitle: "Fintech & Banking",
@@ -109,6 +115,84 @@ export const projects = [
     tags: ["React Native", "WebRTC", "HIPAA", "HL7 FHIR", "Twilio"],
     stats: { users: "120K+", rating: "4.8", downloads: "400K+" },
     color: "#16a085",
+  },
+ */
+export const projects = [
+  
+  {
+    id: "saraseafood",
+    title: "Sara Sea Food",
+    subtitle: "Food & Restaurants",
+    description:
+      "A full-featured mobile app for Sara Sea Food restaurant, enabling customers to browse the menu, place orders, and track delivery in real time.",
+    image: saraseafood1,
+    links: {
+      github: "https://github.com/MohamedFouadIbrahim/E-commerce",
+      live: "https://apps.apple.com/il/app/sara-sea-food/id1485140629",
+    },
+    tags: ["React Native", "E-Commerce", "Food Delivery"],
+    stats: { users: "—", rating: "—", downloads: "—" },
+    color: "#e07b54",
+  },
+  {
+    id: "zabehaty",
+    title: "Zabehaty",
+    subtitle: "Food & Restaurants",
+    description:
+      "An on-demand fresh meat ordering app allowing customers to select cuts, schedule slaughter, and receive hygienic delivery straight to their door.",
+    image: zabehaty1,
+    links: {
+      github: "https://github.com/MohamedFouadIbrahim/Zabehaty",
+      live: "http://onelink.to/ztkn9s",
+    },
+    tags: ["React Native", "Food Delivery", "E-Commerce"],
+    stats: { users: "—", rating: "—", downloads: "—" },
+    color: "#27ae60",
+  },
+  {
+    id: "mobigift",
+    title: "Mobigift",
+    subtitle: "E-Commerce",
+    description:
+      "A digital gifting platform where users can browse, purchase, and send gift cards and vouchers for popular brands across the region.",
+    image: mobigift1,
+    links: {
+      github: "https://github.com/MohamedFouadIbrahim/E-commerce",
+      live: "https://apps.apple.com/il/app/mobigift-wholesale/id1487955746",
+    },
+    tags: ["React Native", "E-Commerce", "Gift Cards"],
+    stats: { users: "—", rating: "—", downloads: "—" },
+    color: "#8e44ad",
+  },
+  {
+    id: "leomarka",
+    title: "LEOMARKA",
+    subtitle: "E-Commerce",
+    description:
+      "A multi-vendor e-commerce app featuring product discovery, cart management, secure checkout, and order tracking for a seamless shopping experience.",
+    image: leomarka1,
+    links: {
+      github: "https://github.com/MohamedFouadIbrahim/E-commerce",
+      live: "https://apps.apple.com/il/app/leo-marka-jo/id1518395514",
+    },
+    tags: ["React Native", "E-Commerce", "Multi-Vendor"],
+    stats: { users: "—", rating: "—", downloads: "—" },
+    color: "#1a7a4e",
+  },
+  {
+    id: "mobishop",
+    title: "MobiShop",
+    subtitle: "E-Commerce",
+    description:
+      "A versatile mobile shopping app with a clean UI, category browsing, wishlist management, and integrated payment gateway for a smooth buying journey.",
+    image: mobishop1,
+    links: {
+      github: "https://github.com/MohamedFouadIbrahim/E-commerce",
+      live: "https://apps.apple.com/il/app/mobishop-store/id1495034279",
+    },
+    tags: ["React Native", "E-Commerce", "Shopping"],
+    stats: { users: "—", rating: "—", downloads: "—" },
+    color: "#e67e22",
   },
 ];
 

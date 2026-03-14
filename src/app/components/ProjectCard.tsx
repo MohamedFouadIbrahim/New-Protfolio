@@ -12,12 +12,15 @@ interface ProjectCardProps {
     tags: string[];
     stats: { users: string; rating: string; downloads: string };
     color: string;
+    links?: { github: string; live: string };
   };
   index: number;
   featured?: boolean;
 }
 
-export function ProjectCard({ project, index, featured = false }: ProjectCardProps) {
+export function ProjectCard({ project, index,  }: ProjectCardProps) {
+  const featured = false
+  
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -25,7 +28,7 @@ export function ProjectCard({ project, index, featured = false }: ProjectCardPro
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className={`group rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/30 transition-all duration-300 ${
-        featured ? "md:col-span-2 md:grid md:grid-cols-2" : ""
+        featured ? "md:col-span-2 md:grid md:grid-cols-2 md:min-h-[360px]" : ""
       }`}
     >
       <div className={`relative overflow-hidden ${featured ? "h-64 md:h-full" : "h-52"}`}>
@@ -50,9 +53,10 @@ export function ProjectCard({ project, index, featured = false }: ProjectCardPro
           <h3 className="text-foreground" style={{ fontSize: "1.25rem", fontWeight: 700 }}>
             {project.title}
           </h3>
-          <button className="text-muted-foreground hover:text-primary transition-colors shrink-0 mt-1">
+          <a href={project.links?.live || "#"} target="_blank" rel="noopener noreferrer"
+             className="text-muted-foreground hover:text-primary transition-colors shrink-0 mt-1">
             <ExternalLink className="w-4 h-4" />
-          </button>
+          </a>
         </div>
 
         <p className="text-muted-foreground mb-4" style={{ fontSize: "0.875rem", lineHeight: 1.7 }}>

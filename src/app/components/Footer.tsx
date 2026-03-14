@@ -12,7 +12,7 @@ export function Footer() {
                 <Smartphone className="w-4 h-4 text-primary-foreground" />
               </div>
               <span className="text-foreground" style={{ fontWeight: 600, fontSize: "1rem" }}>
-                DevPortfolio
+                Mohamed Fouad
               </span>
             </div>
             <p className="text-muted-foreground" style={{ fontSize: "0.875rem", lineHeight: 1.7 }}>
@@ -64,10 +64,7 @@ export function Footer() {
 
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground" style={{ fontSize: "0.8125rem" }}>
-            &copy; 2026 DevPortfolio. All rights reserved.
-          </p>
-          <p className="text-muted-foreground" style={{ fontSize: "0.8125rem" }}>
-            Built with React & Tailwind CSS
+            &copy; 2026 Mohamed Fouad. All rights reserved.
           </p>
         </div>
       </div>

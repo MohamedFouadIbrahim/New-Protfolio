@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router";
 import { projects, testimonials } from "../components/data";
 import { ProjectCard } from "../components/ProjectCard";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+// import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { motion } from "motion/react";
 
 import myPhoto from "../../assets/4285d93e9147c3d1f638a51f06891fecd4f305c3.png";
@@ -50,7 +50,7 @@ const services = [
 ];
 
 export function HomePage() {
-  const featuredProjects = projects.slice(0, 3);
+  const featuredProjects = projects.slice(0, 2);
 
   return (
     <div>

@@ -55,10 +55,6 @@ export function AboutPage() {
                 <MapPin className="w-4 h-4 text-primary" />
                 <span style={{ fontSize: "0.875rem" }}>Remote / Worldwide</span>
               </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Award className="w-4 h-4 text-primary" />
-                <span style={{ fontSize: "0.875rem" }}>Google Dev Expert</span>
-              </div>
             </div>
 
             <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition-opacity" style={{ fontWeight: 600 }}>
