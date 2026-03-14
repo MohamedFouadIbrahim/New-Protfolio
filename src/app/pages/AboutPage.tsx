@@ -9,14 +9,14 @@ const techStack = [
   { name: "React Native", icon: "⚛️" },
   { name: "TypeScript", icon: "🔷" },
   { name: "Expo", icon: "📱" },
-  { name: "Redux", icon: "🔄" },
+  { name: "Redux/RTK", icon: "🔄" },
   { name: "React Query", icon: "🔍" },
-  { name: "Firebase", icon: "🔥" },
-  { name: "GraphQL", icon: "◼️" },
   { name: "Node.js", icon: "🟢" },
-  { name: "Jest", icon: "🧪" },
-  { name: "Detox", icon: "🤖" },
+  { name: "PostgreSQL", icon: "🐘" },
+  { name: "Firebase", icon: "🔥" },
   { name: "Fastlane", icon: "🚀" },
+  { name: "Jest", icon: "🧪" },
+  { name: "React Navigation", icon: "🗺️" },
   { name: "Git", icon: "📦" },
 ];
 
@@ -39,28 +39,33 @@ export function AboutPage() {
               <span className="text-primary">Experiences</span> That Matter
             </h1>
             <p className="text-muted-foreground mb-4" style={{ fontSize: "1rem", lineHeight: 1.8 }}>
-              I'm a Senior/Lead React Native developer with 8+ years of experience
-              building production-grade mobile applications. I specialize in
-              cross-platform development, delivering apps that feel truly native on
-              both iOS and Android.
+              I'm a Full Stack Developer with 6+ years of experience specializing
+              in React Native and Node.js. I build production-grade mobile
+              applications and backend APIs that power the full product lifecycle.
             </p>
             <p className="text-muted-foreground mb-6" style={{ fontSize: "1rem", lineHeight: 1.8 }}>
               My approach combines clean architecture, performance optimization, and
-              beautiful UI/UX to create apps that users love. I've led teams,
-              mentored developers, and shipped apps to millions of users worldwide.
+              beautiful UI/UX to create apps that users love. I've delivered
+              end-to-end solutions for startups and enterprises across the UAE and
+              beyond.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-6">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span style={{ fontSize: "0.875rem" }}>Remote / Worldwide</span>
+                <span style={{ fontSize: "0.875rem" }}>Dubai, United Arab Emirates</span>
               </div>
             </div>
 
-            <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition-opacity" style={{ fontWeight: 600 }}>
+            <a
+              href="/Mohamed_Fouad_Resume.pdf"
+              download="Mohamed_Fouad_Resume.pdf"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+              style={{ fontWeight: 600 }}
+            >
               <Download className="w-4 h-4" />
               Download Resume
-            </button>
+            </a>
           </motion.div>
 
           <motion.div
@@ -198,8 +203,13 @@ export function AboutPage() {
                       <h3 className="text-foreground mb-1" style={{ fontSize: "1.125rem", fontWeight: 600 }}>
                         {exp.role}
                       </h3>
-                      <p className="text-muted-foreground mb-3" style={{ fontSize: "0.875rem", fontWeight: 500 }}>
+                      <p className="text-muted-foreground mb-1" style={{ fontSize: "0.875rem", fontWeight: 500 }}>
                         {exp.company}
+                        {exp.location && (
+                          <span className="text-muted-foreground/60 font-normal ml-2" style={{ fontSize: "0.8125rem" }}>
+                            · {exp.location}
+                          </span>
+                        )}
                       </p>
                       <p className="text-muted-foreground" style={{ fontSize: "0.875rem", lineHeight: 1.7 }}>
                         {exp.description}

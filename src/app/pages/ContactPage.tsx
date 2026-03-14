@@ -1,20 +1,26 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Mail, MapPin, Clock, Send, Github, Linkedin, Twitter, MessageSquare } from "lucide-react";
+import { Mail, MapPin, Clock, Send, Github, Linkedin, Twitter, MessageSquare, Phone } from "lucide-react";
 import { toast, Toaster } from "sonner";
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@devportfolio.com",
+    value: "mohamed.fouadrn@gmail.com",
     description: "Drop me a line anytime",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+971 58 178 4133",
+    description: "Available during business hours",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Remote / Worldwide",
-    description: "Available for global projects",
+    value: "Dubai, United Arab Emirates",
+    description: "Open to remote & on-site",
   },
   {
     icon: Clock,
@@ -22,18 +28,11 @@ const contactInfo = [
     value: "Mon - Fri, 9am - 6pm",
     description: "Response within 24 hours",
   },
-  {
-    icon: MessageSquare,
-    label: "Preferred",
-    value: "Email or LinkedIn",
-    description: "Best way to reach me",
-  },
 ];
 
 const socials = [
-  { icon: Github, label: "GitHub", url: "#" },
-  { icon: Linkedin, label: "LinkedIn", url: "#" },
-  { icon: Twitter, label: "Twitter", url: "#" },
+  { icon: Github, label: "GitHub", url: "https://github.com/MohamedFouadIbrahim" },
+  { icon: Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/mohamed-fouad-467856141" },
 ];
 
 export function ContactPage() {
@@ -73,13 +72,13 @@ export function ContactPage() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="max-w-lg mx-auto">
           {/* Contact Info */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-2 space-y-5"
+            className="space-y-5"
           >
             {contactInfo.map((info, i) => (
               <motion.div
@@ -105,10 +104,10 @@ export function ContactPage() {
 
             {/* Socials */}
             <div className="pt-4">
-              <p className="text-muted-foreground mb-3" style={{ fontSize: "0.8125rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em" }}>
+              <p className="text-muted-foreground mb-3 text-center" style={{ fontSize: "0.8125rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em" }}>
                 Follow Me
               </p>
-              <div className="flex gap-3">
+              <div className="flex justify-center gap-3">
                 {socials.map((s) => (
                   <a
                     key={s.label}
@@ -124,12 +123,12 @@ export function ContactPage() {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
             className="lg:col-span-3"
-          >
+           >
             <form
               onSubmit={handleSubmit}
               className="p-8 rounded-2xl bg-card border border-border"
@@ -232,7 +231,7 @@ export function ContactPage() {
                 Send Message
               </button>
             </form>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </div>

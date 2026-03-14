@@ -3,7 +3,8 @@ import { motion } from "motion/react";
 import { projects } from "../components/data";
 import { ProjectCard } from "../components/ProjectCard";
 
-const categories = ["All", "Fintech & Banking", "Health & Fitness", "E-Commerce", "Food Delivery", "Food & Restaurants", "Social Platform", "Healthcare"];
+// const categories = ["All", "Fintech & Banking", "Health & Fitness", "E-Commerce", "Food Delivery", "Food & Restaurants", "Social Platform", "Healthcare"];
+const categories = ["All",   "E-Commerce", "Food & Restaurants",];
 
 export function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState("All");

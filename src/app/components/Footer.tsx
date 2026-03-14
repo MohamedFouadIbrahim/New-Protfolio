@@ -44,14 +44,13 @@ export function Footer() {
             </h4>
             <div className="flex gap-3">
               {[
-                { icon: Github, label: "GitHub" },
-                { icon: Linkedin, label: "LinkedIn" },
-                { icon: Twitter, label: "Twitter" },
-                { icon: Mail, label: "Email" },
+                { icon: Github, label: "GitHub", link: "https://github.com/MohamedFouadIbrahim" },
+                { icon: Linkedin, label: "LinkedIn", link:"https://www.linkedin.com/in/mohamed-fouad-467856141" },
+                { icon: Mail, label: "Email", link: "mailto:mohamed.fouadrn@gmail.com" },
               ].map((social) => (
                 <a
                   key={social.label}
-                  href="#"
+                  href={social.link}
                   aria-label={social.label}
                   className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all"
                 >

@@ -16,10 +16,8 @@ import { motion } from "motion/react";
 import myPhoto from "../../assets/4285d93e9147c3d1f638a51f06891fecd4f305c3.png";
 
 const heroStats = [
-  { value: "8+", label: "Years Experience" },
-  { value: "40+", label: "Apps Delivered" },
-  { value: "5M+", label: "Total Downloads" },
-  { value: "4.8", label: "Avg. Rating" },
+  { value: "6+", label: "Years Experience" },
+  { value: "20+", label: "Apps Delivered" },
 ];
 
 const services = [
@@ -76,14 +74,14 @@ export function HomePage() {
               </div>
 
               <h1 className="text-foreground mb-4" style={{ fontSize: "clamp(2rem, 5vw, 3.25rem)", fontWeight: 800, lineHeight: 1.15, letterSpacing: "-0.02em" }}>
-                Senior React Native{" "}
+                React Native / Full Stack{" "}
                 <span className="text-primary">Developer</span>
               </h1>
 
               <p className="text-muted-foreground mb-8 max-w-lg" style={{ fontSize: "1.0625rem", lineHeight: 1.8 }}>
-                I build high-performance, beautiful mobile applications that
-                scale. 8+ years of experience delivering production-grade apps
-                for startups and enterprises alike.
+                I build high-performance mobile applications and full-stack
+                solutions that scale. 6+ years of experience delivering
+                production-grade apps for startups and enterprises alike.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -127,7 +125,7 @@ export function HomePage() {
                       <Zap className="w-5 h-5 text-green-400" />
                     </div>
                     <div>
-                      <p className="text-foreground" style={{ fontSize: "0.875rem", fontWeight: 600 }}>40+ Apps</p>
+                      <p className="text-foreground" style={{ fontSize: "0.875rem", fontWeight: 600 }}>20+ Apps</p>
                       <p className="text-muted-foreground" style={{ fontSize: "0.75rem" }}>Delivered</p>
                     </div>
                   </div>
@@ -152,7 +150,7 @@ export function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-border"
+            className="grid grid-cols-2 max-w-sm mx-auto gap-6 mt-16 pt-12 border-t border-border"
           >
             {heroStats.map((stat) => (
               <div key={stat.label} className="text-center">
@@ -261,7 +259,7 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials
       <section className="py-20 bg-card/50">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div
@@ -312,7 +310,7 @@ export function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-20">

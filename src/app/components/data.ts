@@ -10,8 +10,8 @@ export const skills = [
     items: [
       { name: "React Native", level: 98 },
       { name: "Expo", level: 95 },
-      { name: "iOS (Swift)", level: 70 },
-      { name: "Android (Kotlin)", level: 65 },
+      { name: "React Navigation", level: 88 },
+      { name: "React Native Reanimated", level: 85 },
     ],
   },
   {
@@ -19,26 +19,26 @@ export const skills = [
     items: [
       { name: "React.js", level: 95 },
       { name: "TypeScript", level: 92 },
-      { name: "Next.js", level: 85 },
-      { name: "Tailwind CSS", level: 90 },
+      { name: "Node.js / Express.js", level: 82 },
+      { name: "Next.js", level: 78 },
     ],
   },
   {
     category: "State & Architecture",
     items: [
-      { name: "Redux / Zustand", level: 95 },
+      { name: "Redux / Redux Toolkit", level: 95 },
       { name: "React Query", level: 90 },
-      { name: "MobX", level: 80 },
-      { name: "Clean Architecture", level: 88 },
+      { name: "Zustand", level: 88 },
+      { name: "Clean Architecture", level: 90 },
     ],
   },
   {
     category: "Backend & DevOps",
     items: [
-      { name: "Node.js", level: 82 },
-      { name: "Firebase", level: 88 },
-      { name: "CI/CD (Fastlane)", level: 85 },
+      { name: "PostgreSQL / AsyncStorage", level: 80 },
+      { name: "Fastlane / GitHub Actions", level: 85 },
       { name: "CodePush / OTA", level: 90 },
+      { name: "Firebase (FCM)", level: 85 },
     ],
   },
 ];
@@ -219,31 +219,43 @@ export const testimonials = [
 
 export const experience = [
   {
-    role: "Senior React Native Developer",
-    company: "TechCorp Global",
-    period: "2022 - Present",
+    role: "Full Stack Developer (React Native / Node.js)",
+    company: "IFZA (International Free Zone Authority)",
+    location: "Dubai, UAE",
+    period: "Apr. 2023 – Present",
     description:
-      "Leading a team of 6 developers building enterprise mobile applications. Architected a shared component library used across 4 products. Reduced app crash rate by 95%.",
+      "Built Users & Partners portals with mobile + backend APIs covering the full business setup lifecycle. Delivered Visa/License applications, renewals, amendments, payments, and status tracking. Implemented background jobs, queues, and caching for scalability.",
   },
   {
-    role: "Lead Mobile Engineer",
-    company: "StartupX",
-    period: "2020 - 2022",
+    role: "Senior React Native Developer",
+    company: "EJAFTECH",
+    location: "Remote",
+    period: "Jan. 2022 – Mar. 2023",
     description:
-      "Built and scaled a fintech app from 0 to 500K users. Implemented CI/CD pipelines with Fastlane and CodePush for OTA updates. Mentored 3 junior developers.",
+      "Automated mobile release pipelines, reducing deployment time by 50%. Delivered ALAMIYA e-commerce apps and integrated Odoo ERP. Built offline-first app supporting field operations in low/no-connectivity environments.",
+  },
+  {
+    role: "Senior React Native Developer",
+    company: "ATPVITAL",
+    location: "Remote",
+    period: "Apr. 2021 – Sept. 2021",
+    description:
+      "Contributed to ZABEHTY e-commerce app — shipped new features, fixed critical bugs, improved stability and UX. Used TypeScript and React Navigation for maintainable navigation flows and scalable screen architecture.",
   },
   {
     role: "React Native Developer",
-    company: "Digital Agency Pro",
-    period: "2018 - 2020",
+    company: "ROXIIT",
+    location: "Remote",
+    period: "Jun. 2019 – Jan. 2021",
     description:
-      "Delivered 12+ client projects across healthcare, e-commerce, and social domains. Introduced TypeScript and automated testing, improving code quality by 60%.",
+      "Built a Shopify-like multi-tenant e-commerce platform powering multiple stores from a single codebase. Designed a config-driven rendering engine for theme/layout. Architected Redux + Thunk with redux-persist. Scaled to 4 countries, 100+ users, 2,000+ orders.",
   },
   {
-    role: "Frontend Developer",
-    company: "WebStudio",
-    period: "2016 - 2018",
+    role: "Full Stack Developer",
+    company: "FREELANCER",
+    location: "Alexandria, Egypt",
+    period: "Jan. 2019 – May 2019",
     description:
-      "Transitioned from web to mobile development. Built responsive web apps with React and began developing cross-platform mobile apps with React Native.",
+      "Built a fitness mobile app with location and user interaction features (Uber-like). Also built an e-wallet mobile application.",
   },
 ];
