@@ -74,7 +74,7 @@ export function HomePage() {
               </div>
 
               <h1 className="text-foreground mb-4" style={{ fontSize: "clamp(2rem, 5vw, 3.25rem)", fontWeight: 800, lineHeight: 1.15, letterSpacing: "-0.02em" }}>
-                React Native / Full Stack{" "}
+                Senior React Native / Full Stack{" "}
                 <span className="text-primary">Developer</span>
               </h1>
 
