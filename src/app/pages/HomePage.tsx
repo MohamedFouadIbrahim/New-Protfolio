@@ -55,8 +55,8 @@ export function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent" />
-        <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-2xl" style={{ contain: "paint" }} />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent/5 rounded-full blur-2xl" style={{ contain: "paint" }} />
 
         <div className="relative max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 md:pb-32">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -190,7 +190,7 @@ export function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.05, duration: 0.3 }}
                 className="p-6 rounded-2xl bg-card border border-border hover:border-primary/20 transition-all group"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
@@ -321,7 +321,7 @@ export function HomePage() {
             viewport={{ once: true }}
             className="relative rounded-3xl bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/20 p-10 md:p-16 text-center overflow-hidden"
           >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-2xl" style={{ contain: "paint" }} />
             <div className="relative">
               <h2 className="text-foreground mb-4" style={{ fontSize: "2rem", fontWeight: 700 }}>
                 Have a Project in Mind?

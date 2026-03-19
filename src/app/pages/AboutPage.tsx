@@ -101,7 +101,7 @@ export function AboutPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
+                transition={{ delay: i * 0.04, duration: 0.3 }}
                 className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors"
               >
                 <span style={{ fontSize: "1.125rem" }}>{tech.icon}</span>
@@ -145,10 +145,11 @@ export function AboutPage() {
                       </div>
                       <div className="h-2 bg-secondary rounded-full overflow-hidden">
                         <motion.div
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
+                          initial={{ scaleX: 0 }}
+                          whileInView={{ scaleX: 1 }}
                           viewport={{ once: true }}
-                          transition={{ duration: 1, ease: "easeOut" }}
+                          transition={{ duration: 0.7, ease: "easeOut" }}
+                          style={{ width: `${skill.level}%`, transformOrigin: "left" }}
                           className="h-full rounded-full bg-gradient-to-r from-primary to-primary/70"
                         />
                       </div>
@@ -180,7 +181,7 @@ export function AboutPage() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
+                  transition={{ delay: i * 0.05, duration: 0.3 }}
                   className={`relative flex ${
                     i % 2 === 0 ? "md:justify-start" : "md:justify-end"
                   }`}

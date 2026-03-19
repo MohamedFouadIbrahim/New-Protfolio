@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Home", path: "/" },
   { label: "Projects", path: "/projects" },
   { label: "About", path: "/about" },
-  { label: "Contact", path: "/contact" },
+  { label: "Contact", path: "/contact" }
 ];
 
 export function Navbar() {
@@ -15,7 +15,7 @@ export function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/90 border-b border-border" style={{ transform: "translateZ(0)" }}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center group-hover:scale-105 transition-transform">
